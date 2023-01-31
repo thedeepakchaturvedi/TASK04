@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.nav-container {
+    position:fixed;
+    z-index: 2;
+}
+
+nav {
+    height: 70px;
+    width : 100vw;
+    background-color: rgb(49, 54, 63);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid rgb(36, 41, 46);
+}
+
+
+
+body {
+    background-color: rgb(36, 41, 46);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+nav .logo {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(65 212 255);
+    /* background-color: yellow; */
+    width: 50%;
+    margin-left: 5vw;
+}
+
+.links {
+    width: 40%;
+    font-family: 'Zilla Slab', serif;
+    font-size: 18px;
+    font-weight: bold;
+    /* background-color: yellow; */
+}
+
+.lin {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    list-style: none;
+}
+
+.lin li a{
+    text-decoration: none;
+    color: white;
+}
+
+.lin li a:hover, .lin li a:active, .lin li a:focus {
+    color: rgb(65 212 255);
+}
+
+/* navbar is completed */
+
+.outer-box {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.outer-box .content-box {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 80px;
+    width: 90vw;
+    margin-top: 150px;
+}
+
+.left-pane,.right-pane {
+    background-color: rgb(49, 54, 63);
+    border-radius: 20px;
+    display: inline-block;
+    height: fit-content;
+}
+
+.left-pane {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.right-pane {
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* left-pane */
+
+.left-pane-content {
+    /* background-color: gray; */
+    margin: 20px;
+}
+.left-pane-content .img-container {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+}
+.left-pane-content .img-box {
+    width: 260px;
+    height: 324px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-image: url("../assets/imgs/deepak\ image.png");
+    background-size: contain;
+}
+
+.left-pane-content .name, .skill-head {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.left-pane .name .designation {
+    font-size: 14px;
+    font-style: italic;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.prof-links-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 34px;
+    background-color: rgb(87, 86, 86);
+    border-radius: 50%;
+}
+
+.icon-container a {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon-container img {
+    width: 24px;
+    height: 24px;
+    transition: 0.2s ease-in-out;
+}
+
+.icon-container img:hover {
+    filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(163deg) brightness(170%) contrast(101%);
+    transform: scale(1.2);
+}
+
+.skill-head {
+    margin-bottom: 10px;
+}
+
+.left-pane-content .hr-line{
+    height: 1px;
+    background: white;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.skill:hover {
+    transform: translate(0, -5px);
+}
+
+.skill img {
+    width: 40px;
+    height: 40px;
+}
+
+/* hover text on skills  */
+
+.skill div{
+    position: absolute;
+    top: -35px;
+    left: 0;
+    background: rgb(36, 41, 46);
+    color: rgb(238, 238, 238);
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.skill:hover div{
+    min-width: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+    visibility: visible;
+    opacity: 1; 
+}
+
+
+/* right-pane */
+
+.right-pane .hey {
+    width: 38px;
+}
+
+.right-pane .content-header {
+    display: inline-block;
+    color: white;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+.content-header span {
+    color: rgb(65 212 255);
+}
+.content-intro, .content-subintro {
+    padding: 10px 0;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+.content-subintro span {
+    font-weight: bold;
+    color: rgb(65 212 255);
+}
+
+
+.right-pane .prof-head, .right-pane .ach-head, .right-pane .hob-head {
+    color: white;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+.prof-content , .ach-content, .hob-content{
+    margin: 20px 0;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.prof-content span, .ach-content span, .hob-content span {
+    color: rgb(65 212 255);
+    font-weight: bold;
+}
+
+.ach-content ul , .hob-content ul{
+    margin-left: 18px;
+}
+
+.ico {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    background-size: contain;
+}
+
+.spotify{
+    background: url("../../assets/icons/spotify.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.gaming{
+    background: url("../../assets/icons/gamepad-solid.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.book{
+    background: url("../../assets/icons/book-solid.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.coding {
+    background: url("../../assets/icons/code-solid.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bulb {
+    background: url("../../assets/icons/lightbulb-solid.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bulb:hover,.bulb:focus,
+.coding:hover,.coding:focus,
+.book:hover,.book:focus,
+.gaming:hover,.gaming:focus,
+.spotify:hover,.spotify:focus
+{
+  filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(163deg) brightness(170%) contrast(101%);
+}
+
+.footer {
+    height: 40px;
+    background-color: rgb(49, 54, 63);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+
+    font-family: 'Zilla Slab', serif;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content span {
+    font-weight: bold;
+    color: rgb(65 212 255);
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 500px) {
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .links {
+        width: 50%;
+    }
+
+    .left-pane-content .img-box{
+        width: 180px;
+        height: 200px;
+        background-color: yellow;
+    }
+
+    .lin {
+        flex-direction: column;
+        float: right;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 5vw;
+    }
+
+    .left-pane-content .img-box {
+        width: 200px;
+        height: 250px;
+        margin-top: 20px;
+    }
+  }
+
+
+@media only screen and (max-width: 800px) {
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .logo {
+        font-size: 26px;
+    }
+  }
