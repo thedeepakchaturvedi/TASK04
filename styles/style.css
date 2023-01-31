@@ -306,27 +306,27 @@ nav .logo {
 }
 
 .spotify{
-    background: url("../../assets/icons/spotify.svg");
+    background: url("./assets/icons/spotify.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 .gaming{
-    background: url("../../assets/icons/gamepad-solid.svg");
+    background: url("./assets/icons/gamepad-solid.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 .book{
-    background: url("../../assets/icons/book-solid.svg");
+    background: url("./assets/icons/book-solid.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 .coding {
-    background: url("../../assets/icons/code-solid.svg");
+    background: url("./assets/icons/code-solid.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 .bulb {
-    background: url("../../assets/icons/lightbulb-solid.svg");
+    background: url("./assets/icons/lightbulb-solid.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
