@@ -168,7 +168,7 @@ const rightPaneData = {
 
 const footerData = {
     title : "<b>Developed by</b> <span>Deepak Chaturvedi</span> using ",
-    html : "../assets/skillsImgs/html.8c11e1a8.svg",
+    html : "../../assets/skillsImgs/html.8c11e1a8.svg",
     css : "../assets/skillsImgs/css.b3c0acbf.svg"
 }
 
