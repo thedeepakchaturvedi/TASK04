@@ -75,7 +75,7 @@ class RightPane {
         achContent.appendChild(achList);
         
         achContent.innerHTML += endContent;
-        console.log(achContent.innerHTML);
+        
         let hobListData = this.rightPaneData.hobBlock.hobList;
         hobHead.innerText = this.rightPaneData.hobBlock.title;
         for(let i = 0; i < hobListArray.length; i++) {
